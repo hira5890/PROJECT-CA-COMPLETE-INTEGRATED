@@ -1,0 +1,114 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Apr 10 14:57:31 2026
+| Host         : Hira running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    36 |
+|    Minimum number of control sets                        |    36 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    36 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              20 |            5 |
+| No           | Yes                   | No                     |              58 |           22 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             992 |          447 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------------------------------+----------------------+------------------+----------------+--------------+
+|   Clock Signal  |               Enable Signal              |   Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+------------------------------------------+----------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG  |                                          |                      |                2 |              2 |         1.00 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/memory_reg_0_255_0_0_i_3_0[0] | btnC_IBUF            |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG  |                                          | u_clkdiv/clk_10mhz_0 |                7 |             26 |         3.71 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_9[0]                | btnC_IBUF            |               12 |             32 |         2.67 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_29[0]               | btnC_IBUF            |               21 |             32 |         1.52 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_15[0]               | btnC_IBUF            |               15 |             32 |         2.13 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_17[0]               | btnC_IBUF            |               16 |             32 |         2.00 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_20[0]               | btnC_IBUF            |               14 |             32 |         2.29 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_14[0]               | btnC_IBUF            |               13 |             32 |         2.46 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_22[0]               | btnC_IBUF            |               13 |             32 |         2.46 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_13[0]               | btnC_IBUF            |               13 |             32 |         2.46 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_23[0]               | btnC_IBUF            |               15 |             32 |         2.13 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_19[0]               | btnC_IBUF            |               15 |             32 |         2.13 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_3[0]                | btnC_IBUF            |               17 |             32 |         1.88 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_27[0]               | btnC_IBUF            |               12 |             32 |         2.67 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_4[0]                | btnC_IBUF            |               18 |             32 |         1.78 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_30[0]               | btnC_IBUF            |               16 |             32 |         2.00 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_24[0]               | btnC_IBUF            |               12 |             32 |         2.67 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_7[0]                | btnC_IBUF            |               14 |             32 |         2.29 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_25[0]               | btnC_IBUF            |               12 |             32 |         2.67 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_31[0]               | btnC_IBUF            |               16 |             32 |         2.00 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_28[0]               | btnC_IBUF            |               21 |             32 |         1.52 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_8[0]                | btnC_IBUF            |               11 |             32 |         2.91 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_12[0]               | btnC_IBUF            |               11 |             32 |         2.91 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_16[0]               | btnC_IBUF            |               15 |             32 |         2.13 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_2[0]                | btnC_IBUF            |               18 |             32 |         1.78 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_21[0]               | btnC_IBUF            |               11 |             32 |         2.91 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_26[0]               | btnC_IBUF            |               14 |             32 |         2.29 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_11[0]               | btnC_IBUF            |               12 |             32 |         2.67 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_6[0]                | btnC_IBUF            |               11 |             32 |         2.91 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_10[0]               | btnC_IBUF            |                8 |             32 |         4.00 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_5[0]                | btnC_IBUF            |               24 |             32 |         1.33 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/PC_reg[5]_18[0]               | btnC_IBUF            |               17 |             32 |         1.88 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/E[0]                          | btnC_IBUF            |               10 |             32 |         3.20 |
+|  clk_10mhz_BUFG |                                          | btnC_IBUF            |               20 |             52 |         2.60 |
+|  clk_10mhz_BUFG | u_cpu/u_PC/DataMemWrite_en               |                      |               32 |            128 |         4.00 |
++-----------------+------------------------------------------+----------------------+------------------+----------------+--------------+
+
+

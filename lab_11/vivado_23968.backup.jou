@@ -1,0 +1,173 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Apr  7 10:47:51 2026
+# Process ID: 23968
+# Current directory: C:/Users/hira6/Downloads/lab_11_final/lab_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20264 C:\Users\hira6\Downloads\lab_11_final\lab_11\lab_10.xpr
+# Log file: C:/Users/hira6/Downloads/lab_11_final/lab_11/vivado.log
+# Journal file: C:/Users/hira6/Downloads/lab_11_final/lab_11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.xpr
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevelProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v w ]
+add_files -fileset sim_1 C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top taska_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_TaskA [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+open_wave_config C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg
+source tb_TaskA.tcl
+uut/clk
+close_sim
+launch_simulation
+open_wave_config C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg
+source tb_TaskA.tcl
+set_property is_enabled false [get_files  C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg]
+close_sim
+launch_simulation
+source tb_TaskA.tcl
+run 50ms
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevelProcessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+launch_simulation
+close_sim

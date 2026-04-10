@@ -1,0 +1,1393 @@
+$date
+   Tue Apr  7 12:07:46 2026
+$end
+$version
+  2020.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_TaskA $end
+$var reg 1 ! clk $end
+$var reg 1 " btnC $end
+$var reg 6 # sw [5:0] $end
+$var wire 6 $ led [5:0] $end
+$var wire 7 % seg [6:0] $end
+$var wire 4 & an [3:0] $end
+$var reg 6 ' led_prev [5:0] $end
+$var integer 32 ( i $end
+$scope module uut $end
+$var wire 1 ) clk $end
+$var wire 1 * btnC $end
+$var wire 6 + sw [5:0] $end
+$var wire 6 $ led [5:0] $end
+$var wire 7 % seg [6:0] $end
+$var wire 4 & an [3:0] $end
+$var wire 1 , clk_10mhz $end
+$var wire 6 - led_val [5:0] $end
+$var wire 1 . led_we $end
+$scope module u_clkdiv $end
+$var wire 1 ) clk_100mhz $end
+$var reg 1 / clk_10mhz $end
+$var reg 3 0 count [2:0] $end
+$upscope $end
+$scope module u_cpu $end
+$var wire 1 , clk $end
+$var wire 1 * reset $end
+$var wire 6 + switch_in [5:0] $end
+$var wire 6 - led_out [5:0] $end
+$var wire 1 . led_write_en $end
+$var wire 32 1 PC [31:0] $end
+$var wire 32 2 PC_Plus4 [31:0] $end
+$var wire 32 3 PC_Next [31:0] $end
+$var wire 32 4 instruction [31:0] $end
+$var wire 7 5 opcode [6:0] $end
+$var wire 5 6 rd [4:0] $end
+$var wire 3 7 funct3 [2:0] $end
+$var wire 5 8 rs1 [4:0] $end
+$var wire 5 9 rs2 [4:0] $end
+$var wire 7 : funct7 [6:0] $end
+$var wire 1 ; RegWrite $end
+$var wire 2 < ALUOp [1:0] $end
+$var wire 1 = MemRead $end
+$var wire 1 > MemWrite $end
+$var wire 1 ? ALUSrc $end
+$var wire 1 @ MemtoReg $end
+$var wire 1 A Branch $end
+$var wire 32 B ReadData1 [31:0] $end
+$var wire 32 C ReadData2 [31:0] $end
+$var wire 32 D WriteBackData [31:0] $end
+$var wire 32 E Imm [31:0] $end
+$var wire 32 F ALU_SrcB [31:0] $end
+$var wire 4 G ALUCtrl [3:0] $end
+$var wire 32 H ALUResult [31:0] $end
+$var wire 1 I Zero $end
+$var wire 32 J Branch_Target [31:0] $end
+$var wire 1 K PCSrc $end
+$var wire 1 L DataMemWrite_en $end
+$var wire 1 M DataMemRead_en $end
+$var wire 1 N LEDWrite_en $end
+$var wire 1 O SwitchReadEnable $end
+$var wire 32 P MemReadData [31:0] $end
+$var wire 32 Q MemOrSwitchData [31:0] $end
+$var wire 1 R is_jal $end
+$var wire 1 S is_jalr $end
+$var wire 1 T is_jump $end
+$var wire 1 U is_beq $end
+$var wire 1 V is_bne $end
+$var reg 6 W led_reg [5:0] $end
+$scope module u_PC $end
+$var wire 1 , clk $end
+$var wire 1 * reset $end
+$var wire 32 3 PC_Next [31:0] $end
+$var reg 32 X PC [31:0] $end
+$upscope $end
+$scope module u_pcAdder $end
+$var wire 32 1 PC [31:0] $end
+$var wire 32 2 PC_Plus4 [31:0] $end
+$upscope $end
+$scope module u_iMem $end
+$var wire 32 1 instAddress [31:0] $end
+$var reg 32 Y instruction [31:0] $end
+$var parameter 32 Z OPERAND_LENGTH [31:0] $end
+$upscope $end
+$scope module u_immGen $end
+$var wire 32 4 inst [31:0] $end
+$var reg 32 [ imm_out [31:0] $end
+$var wire 7 \ opcode [6:0] $end
+$upscope $end
+$scope module u_MainCtrl $end
+$var wire 7 5 opcode [6:0] $end
+$var reg 1 ] RegWrite $end
+$var reg 2 ^ ALUOp [1:0] $end
+$var reg 1 _ MemRead $end
+$var reg 1 ` MemWrite $end
+$var reg 1 a ALUSrc $end
+$var reg 1 b MemtoReg $end
+$var reg 1 c Branch $end
+$upscope $end
+$scope module u_regFile $end
+$var wire 1 , clk $end
+$var wire 1 * rst $end
+$var wire 1 ; WriteEnable $end
+$var wire 5 8 rs1 [4:0] $end
+$var wire 5 9 rs2 [4:0] $end
+$var wire 5 6 rd [4:0] $end
+$var wire 32 D WriteData [31:0] $end
+$var reg 32 d ReadData1 [31:0] $end
+$var reg 32 e ReadData2 [31:0] $end
+$var integer 32 f i $end
+$upscope $end
+$scope module u_aluSrcMux $end
+$var wire 32 C A [31:0] $end
+$var wire 32 E B [31:0] $end
+$var wire 1 ? sel $end
+$var wire 32 F Y [31:0] $end
+$upscope $end
+$scope module u_ALUCtrl $end
+$var wire 7 5 opcode [6:0] $end
+$var wire 2 < ALUOp [1:0] $end
+$var wire 3 7 funct3 [2:0] $end
+$var wire 7 : funct7 [6:0] $end
+$var reg 4 g ALUControl [3:0] $end
+$upscope $end
+$scope module u_ALU $end
+$var wire 4 G ALUctl [3:0] $end
+$var wire 32 B A [31:0] $end
+$var wire 32 F B [31:0] $end
+$var reg 32 h ALUout [31:0] $end
+$var wire 1 I Zero $end
+$upscope $end
+$scope module u_branchAdder $end
+$var wire 32 1 PC [31:0] $end
+$var wire 32 E Imm [31:0] $end
+$var wire 32 J Branch_Target [31:0] $end
+$upscope $end
+$scope module u_pcSrcMux $end
+$var wire 32 2 A [31:0] $end
+$var wire 32 J B [31:0] $end
+$var wire 1 K sel $end
+$var wire 32 3 Y [31:0] $end
+$upscope $end
+$scope module u_addrDec $end
+$var wire 32 H address [31:0] $end
+$var wire 1 = readEnable $end
+$var wire 1 > writeEnable $end
+$var reg 1 i DataMemWrite $end
+$var reg 1 j DataMemRead $end
+$var reg 1 k LEDWrite $end
+$var reg 1 l SwitchReadEnable $end
+$upscope $end
+$scope module u_dataMem $end
+$var wire 1 , clk $end
+$var wire 1 L MemWrite $end
+$var wire 1 M MemRead $end
+$var wire 32 H address [31:0] $end
+$var wire 32 C write_data [31:0] $end
+$var reg 32 m read_data [31:0] $end
+$var integer 32 n i $end
+$upscope $end
+$scope module u_wbMux $end
+$var wire 32 H A [31:0] $end
+$var wire 32 Q B [31:0] $end
+$var wire 1 @ sel $end
+$var wire 32 D Y [31:0] $end
+$upscope $end
+$upscope $end
+$scope module u_seg $end
+$var wire 1 ) sys_clk $end
+$var wire 1 * sys_rst $end
+$var wire 16 o val_in [15:0] $end
+$var reg 7 p seg [6:0] $end
+$var reg 4 q an [3:0] $end
+$var reg 20 r refr_ctr [19:0] $end
+$var wire 1 s refr_tick $end
+$var reg 4 t cur_digit [3:0] $end
+$var reg 4 u tens_place [3:0] $end
+$var reg 4 v ones_place [3:0] $end
+$var wire 7 w disp_val [6:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b0 #
+bx $
+bx %
+b1110 &
+bx '
+bx (
+0)
+1*
+b0 +
+0,
+bx -
+0.
+0/
+b0 0
+b0 1
+b100 2
+b100 3
+b10100000000111000010011 4
+b10011 5
+b11100 6
+b0 7
+b0 8
+b101 9
+b0 :
+1;
+b10 <
+0=
+0>
+1?
+0@
+0A
+b0 B
+b0 C
+b101 D
+b101 E
+b101 F
+b10 G
+b101 H
+0I
+b101 J
+0K
+0L
+0M
+0N
+0O
+b0 P
+b0 Q
+0R
+0S
+0T
+1U
+0V
+bx W
+b0 X
+b10100000000111000010011 Y
+b11111 Z
+b101 [
+b10011 \
+1]
+b10 ^
+0_
+0`
+1a
+0b
+0c
+b0 d
+b0 e
+bx f
+b10 g
+b101 h
+0i
+0j
+0k
+0l
+b0 m
+b100000000 n
+b0xxxxxx o
+bx p
+b1110 q
+b0 r
+0s
+bx t
+bx u
+bx v
+bx w
+$end
+#5000
+1!
+1)
+b1 0
+#10000
+0!
+0)
+#15000
+1!
+1)
+b10 0
+#20000
+0!
+0)
+#25000
+1!
+1)
+b11 0
+#30000
+0!
+0)
+#35000
+1!
+1)
+b100 0
+#40000
+0!
+0)
+#45000
+1!
+b0 $
+b1000000 %
+b0 '
+1)
+1,
+b0 -
+1/
+b0 0
+b0 W
+b0 X
+b0 o
+b1000000 p
+b1110 q
+b0 t
+b0 u
+b0 v
+b0 w
+#50000
+0!
+0)
+#55000
+1!
+1)
+b1 0
+#60000
+0!
+0)
+#65000
+1!
+1)
+b10 0
+#70000
+0!
+0)
+#75000
+1!
+1)
+b11 0
+#80000
+0!
+0)
+#85000
+1!
+1)
+b100 0
+#90000
+0!
+0)
+#95000
+1!
+1)
+0,
+0/
+b0 0
+#100000
+0!
+0)
+#105000
+1!
+1)
+b1 0
+#110000
+0!
+0)
+#115000
+1!
+1)
+b10 0
+#120000
+0!
+0)
+#125000
+1!
+1)
+b11 0
+#130000
+0!
+0)
+#135000
+1!
+1)
+b100 0
+#140000
+0!
+0)
+#145000
+1!
+1)
+1,
+1/
+b0 0
+b0 X
+#150000
+0!
+0)
+#155000
+1!
+1)
+b1 0
+#160000
+0!
+0)
+#165000
+1!
+1)
+b10 0
+#170000
+0!
+0)
+#175000
+1!
+1)
+b11 0
+#180000
+0!
+0)
+#185000
+1!
+1)
+b100 0
+#190000
+0!
+0)
+#195000
+1!
+0"
+1)
+0*
+0,
+0/
+b0 0
+b1 r
+#200000
+0!
+0)
+#205000
+1!
+1)
+b1 0
+b10 r
+#210000
+0!
+0)
+#215000
+1!
+1)
+b10 0
+b11 r
+#220000
+0!
+0)
+#225000
+1!
+1)
+b11 0
+b100 r
+#230000
+0!
+0)
+#235000
+1!
+1)
+b100 0
+b101 r
+#240000
+0!
+0)
+#245000
+1!
+1)
+1,
+1/
+b0 0
+b100 1
+b1000 2
+b1000 3
+b11111111100000000000100010011 4
+b10 6
+b11111 9
+b1111 :
+b111111111 D
+b111111111 E
+b111111111 F
+b111111111 H
+0I
+b1000000011 J
+b100 X
+b11111111100000000000100010011 Y
+b111111111 [
+b0 d
+b0 e
+b10 g
+b111111111 h
+0i
+0j
+0k
+0l
+b0 m
+b110 r
+#250000
+0!
+0)
+#255000
+1!
+1)
+b1 0
+b111 r
+#260000
+0!
+0)
+#265000
+1!
+1)
+b10 0
+b1000 r
+#270000
+0!
+0)
+#275000
+1!
+1)
+b11 0
+b1001 r
+#280000
+0!
+0)
+#285000
+1!
+1)
+b100 0
+b1010 r
+#290000
+0!
+0)
+#295000
+1!
+1)
+0,
+0/
+b0 0
+b1011 r
+#300000
+0!
+0)
+#305000
+1!
+1)
+b1 0
+b1100 r
+#310000
+0!
+0)
+#315000
+1!
+1)
+b10 0
+b1101 r
+#320000
+0!
+0)
+#325000
+1!
+1)
+b11 0
+b1110 r
+#330000
+0!
+0)
+#335000
+1!
+1)
+b100 0
+b1111 r
+#340000
+0!
+0)
+#345000
+1!
+1)
+1,
+1/
+b0 0
+b1000 1
+b1100 2
+b1100 3
+b110000000000000000001010010011 4
+b101 6
+b0 9
+b11000 :
+b1100000000 D
+b1100000000 E
+b1100000000 F
+b1100000000 H
+0I
+b1100001000 J
+b1000 X
+b110000000000000000001010010011 Y
+b1100000000 [
+b0 d
+b0 e
+b10 g
+b1100000000 h
+0i
+0j
+0k
+0l
+b0 m
+b10000 r
+#350000
+0!
+0)
+#355000
+1!
+1)
+b1 0
+b10001 r
+#360000
+0!
+0)
+#365000
+1!
+1)
+b10 0
+b10010 r
+#370000
+0!
+0)
+#375000
+1!
+1)
+b11 0
+b10011 r
+#380000
+0!
+0)
+#385000
+1!
+1)
+b100 0
+b10100 r
+#390000
+0!
+0)
+#395000
+1!
+1)
+0,
+0/
+b0 0
+b10101 r
+#400000
+0!
+0)
+#405000
+1!
+1)
+b1 0
+b10110 r
+#410000
+0!
+0)
+#415000
+1!
+1)
+b10 0
+b10111 r
+#420000
+0!
+0)
+#425000
+1!
+1)
+b11 0
+b11000 r
+#430000
+0!
+0)
+#435000
+1!
+1)
+b100 0
+b11001 r
+#440000
+0!
+0)
+#445000
+1!
+1)
+1,
+1/
+b0 0
+b1100 1
+b10000 2
+b10000 3
+b100000000000000000001100010011 4
+b110 6
+b10000 :
+b1000000000 D
+b1000000000 E
+b1000000000 F
+b1000000000 H
+0I
+b1000001100 J
+b1100 X
+b100000000000000000001100010011 Y
+b1000000000 [
+b0 d
+b0 e
+b10 g
+b1000000000 h
+0i
+0j
+0k
+0l
+b0 m
+b11010 r
+#450000
+0!
+0)
+#455000
+1!
+1)
+b1 0
+b11011 r
+#460000
+0!
+0)
+#465000
+1!
+1)
+b10 0
+b11100 r
+#470000
+0!
+0)
+#475000
+1!
+1)
+b11 0
+b11101 r
+#480000
+0!
+0)
+#485000
+1!
+1)
+b100 0
+b11110 r
+#490000
+0!
+0)
+#495000
+1!
+1)
+0,
+0/
+b0 0
+b11111 r
+#500000
+0!
+0)
+#505000
+1!
+1)
+b1 0
+b100000 r
+#510000
+0!
+0)
+#515000
+1!
+1)
+b10 0
+b100001 r
+#520000
+0!
+0)
+#525000
+1!
+1)
+b11 0
+b100010 r
+#530000
+0!
+0)
+#535000
+1!
+1)
+b100 0
+b100011 r
+#540000
+0!
+0)
+#545000
+1!
+1)
+1,
+0.
+1/
+b0 0
+b10000 1
+b10100 2
+b10100 3
+b1110000101010000000100011 4
+b100011 5
+b0 6
+b10 7
+b101 8
+b11100 9
+b0 :
+0;
+b0 <
+1>
+1?
+b1100000000 B
+b101 C
+b1100000000 D
+b0 E
+b0 F
+b1100000000 H
+0I
+b10000 J
+0K
+0N
+0R
+0S
+0U
+0V
+b10000 X
+b1110000101010000000100011 Y
+b0 [
+b100011 \
+0]
+b0 ^
+0_
+1`
+1a
+0b
+0c
+b1100000000 d
+b101 e
+b10 g
+b1100000000 h
+0i
+0j
+0k
+0l
+b0 m
+b100100 r
+#550000
+0!
+0)
+#555000
+1!
+1)
+b1 0
+b100101 r
+#560000
+0!
+0)
+#565000
+1!
+1)
+b10 0
+b100110 r
+#570000
+0!
+0)
+#575000
+1!
+1)
+b11 0
+b100111 r
+#580000
+0!
+0)
+#585000
+1!
+1)
+b100 0
+b101000 r
+#590000
+0!
+0)
+#595000
+1!
+1)
+0,
+0/
+b0 0
+b101001 r
+#600000
+0!
+0)
+#605000
+1!
+1)
+b1 0
+b101010 r
+#610000
+0!
+0)
+#615000
+1!
+1)
+b10 0
+b101011 r
+#620000
+0!
+0)
+#625000
+1!
+1)
+b11 0
+b101100 r
+#630000
+0!
+0)
+#635000
+1!
+1)
+b100 0
+b101101 r
+#640000
+0!
+0)
+#645000
+1!
+1)
+1,
+1.
+1/
+b0 0
+b10100 1
+b11000 2
+b11000 3
+b110010000000100011 4
+b110 8
+b0 9
+b1000000000 B
+b0 C
+b1000000000 D
+b0 F
+b1000000000 H
+0I
+b10100 J
+1N
+b10100 X
+b110010000000100011 Y
+b0 [
+b1000000000 d
+b0 e
+b1000000000 h
+0i
+0j
+1k
+0l
+b0 m
+b101110 r
+#650000
+0!
+0)
+#655000
+1!
+1)
+b1 0
+b101111 r
+#660000
+0!
+0)
+#665000
+1!
+1)
+b10 0
+b110000 r
+#670000
+0!
+0)
+#675000
+1!
+1)
+b11 0
+b110001 r
+#680000
+0!
+0)
+#685000
+1!
+1)
+b100 0
+b110010 r
+#690000
+0!
+0)
+#695000
+1!
+b11 #
+1)
+b11 +
+0,
+0/
+b0 0
+b0 Q
+b110011 r
+#700000
+0!
+0)
+#705000
+1!
+1)
+b1 0
+b110100 r
+#710000
+0!
+0)
+#715000
+1!
+1)
+b10 0
+b110101 r
+#720000
+0!
+0)
+#725000
+1!
+1)
+b11 0
+b110110 r
+#730000
+0!
+0)
+#735000
+1!
+1)
+b100 0
+b110111 r
+#740000
+0!
+0)
+#745000
+1!
+1)
+1,
+0.
+1/
+b0 0
+b11000 1
+b11100 2
+b11100 3
+b101010010110000011 4
+b11 5
+b1011 6
+b101 8
+1;
+1=
+0>
+1?
+1@
+b1100000000 B
+b11 D
+b1100000000 H
+0I
+b11000 J
+0N
+1O
+b11 Q
+0R
+0S
+b11000 X
+b101010010110000011 Y
+b0 [
+b11 \
+1]
+b0 ^
+1_
+0`
+1a
+1b
+0c
+b1100000000 d
+b0 e
+b10 g
+b1100000000 h
+0i
+0j
+0k
+1l
+b0 m
+b111000 r
+#750000
+0!
+0)
+#755000
+1!
+1)
+b1 0
+b111001 r
+#760000
+0!
+0)
+#765000
+1!
+1)
+b10 0
+b111010 r
+#770000
+0!
+0)
+#775000
+1!
+1)
+b11 0
+b111011 r
+#780000
+0!
+0)
+#785000
+1!
+1)
+b100 0
+b111100 r
+#790000
+0!
+0)
+#795000
+1!
+1)
+0,
+0/
+b0 0
+b111101 r
+#800000
+0!
+0)
+#805000
+1!
+1)
+b1 0
+b111110 r
+#810000
+0!
+0)
+#815000
+1!
+1)
+b10 0
+b111111 r
+#820000
+0!
+0)
+#825000
+1!
+1)
+b11 0
+b1000000 r
+#830000
+0!
+0)
+#835000
+1!
+1)
+b100 0
+b1000001 r
+#840000
+0!
+0)
+#845000
+1!
+1)
+1,
+1/
+b0 0
+b11100 1
+b100000 2
+b100000 3
+b11111110000001011000111011100011 4
+b1100011 5
+b11101 6
+b0 7
+b1011 8
+b1111111 :
+0;
+b1 <
+0=
+0?
+0@
+1A
+b11 B
+b11 D
+b11111111111111111111111111111100 E
+b0 F
+b110 G
+b11 H
+0I
+b11000 J
+0K
+0O
+b0 Q
+0R
+0S
+1U
+0V
+b11100 X
+b11111110000001011000111011100011 Y
+b11111111111111111111111111111100 [
+b1100011 \
+0]
+b1 ^
+0_
+0`
+0a
+0b
+1c
+b11 d
+b0 e
+b110 g
+b11 h
+0i
+0j
+0k
+0l
+b0 m
+b1000010 r
+#850000
+0!
+0)
+#855000
+1!
+1)
+b1 0
+b1000011 r
+#860000
+0!
+0)
+#865000
+1!
+1)
+b10 0
+b1000100 r
+#870000
+0!
+0)
+#875000
+1!
+1)
+b11 0
+b1000101 r
+#880000
+0!
+0)
+#885000
+1!
+1)
+b100 0
+b1000110 r
+#890000
+0!
+0)
+#895000
+1!
+1)
+0,
+0/
+b0 0
+b1000111 r
+#900000
+0!
+0)
+#905000
+1!
+1)
+b1 0
+b1001000 r
+#910000
+0!
+0)
+#915000
+1!
+1)
+b10 0
+b1001001 r
+#920000
+0!
+0)
+#925000
+1!
+1)
+b11 0
+b1001010 r
+#930000
+0!
+0)
+#935000
+1!
+1)
+b100 0
+b1001011 r
+#940000
+0!
+0)
+#945000
+1!
+1)
+1,
+1/
+b0 0
+b100000 1
+b100100 2
+b100100 3
+b1011000010100110011 4
+b110011 5
+b1010 6
+b0 :
+1;
+b10 <
+0A
+b0 E
+b0 F
+b10 G
+b100000 J
+0K
+0R
+0S
+b100000 X
+b1011000010100110011 Y
+b0 [
+b110011 \
+1]
+b10 ^
+0_
+0`
+0a
+0b
+0c
+b10 g
+b1001100 r
+#950000
+0!
+0)
+#955000
+1!
+1)
+b1 0
+b1001101 r
+#960000
+0!
+0)
+#965000
+1!
+1)
+b10 0
+b1001110 r
+#970000
+0!
+0)
+#975000
+1!
+1)
+b11 0
+b1001111 r
+#980000
+0!
+0)
+#985000
+1!
+1)
+b100 0
+b1010000 r
+#990000
+0!
+0)
+#995000
+1!
+1)
+0,
+0/
+b0 0
+b1010001 r
+#1000000
+0!
+0)

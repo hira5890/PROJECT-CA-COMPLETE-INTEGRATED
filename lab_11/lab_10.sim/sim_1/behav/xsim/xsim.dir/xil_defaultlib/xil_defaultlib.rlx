@@ -1,0 +1,24 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v,1775561257,verilog,,C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v,,AddressDecoder,,,,,,,,
+C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v,1774935317,verilog,,C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v,,DataMemory,,,,,,,,
+C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v,1774384704,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v,,RISCVALU,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v,1774371217,verilog,,C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v,,ALUControl,,,,,,,,
+C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v,1775541678,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v,,MainControl,,,,,,,,
+C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v,1775136337,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v,,register_file,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/glbl.v,1774440375,verilog,,,,glbl,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v,1774941940,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v,,tb_Task1,,,,,,,,
+,,,,,,tb_top,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v,1775541751,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v,,ClockDivider,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v,1775137426,verilog,,C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v,,ProgramCounter,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v,1775559055,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v,,instructionMemory,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v,1774440376,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v,,branchAdder,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v,1775144693,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v,,immGen,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v,1774440376,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v,,mux2,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v,1775145625,verilog,,C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v,,pcAdder,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v,1775541792,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v,,sevenseg_basys3,,,,,,,,
+,,,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v,,SlowTick,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v,1775541837,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/slow_tick.v,,top,,,,,,,,
+C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v,1775547354,verilog,,C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v,,TopLevelProcessor,,,,,,,,

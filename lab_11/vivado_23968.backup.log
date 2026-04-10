@@ -1,0 +1,909 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Apr  7 10:47:51 2026
+# Process ID: 23968
+# Current directory: C:/Users/hira6/Downloads/lab_11_final/lab_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20264 C:\Users\hira6\Downloads\lab_11_final\lab_11\lab_10.xpr
+# Log file: C:/Users/hira6/Downloads/lab_11_final/lab_11/vivado.log
+# Journal file: C:/Users/hira6/Downloads/lab_11_final/lab_11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Apr  7 11:01:25 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 11:01:25 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v w ]
+add_files C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v
+set_property top top [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Apr  7 11:04:31 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 11:04:31 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+Top: top
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1437.688 ; gain = 217.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:34]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (3#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'instructionMemory' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:1]
+	Parameter OPERAND_LENGTH bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'instructionMemory' (4#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (5#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MainControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MainControl' (6#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (9#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
+INFO: [Synth 8-6157] synthesizing module 'RISCVALU' [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISCVALU' (10#1) [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (11#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6157] synthesizing module 'AddressDecoder' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'AddressDecoder' (12#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (13#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor' (14#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:34]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_basys3' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_basys3' (15#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (16#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1493.430 ; gain = 272.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1493.430 ; gain = 272.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1493.430 ; gain = 272.809
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1493.430 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
+Finished Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1609.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2267.734 ; gain = 1047.113
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2267.734 ; gain = 1047.113
+set_property top TopLevelProcessor [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Apr  7 11:12:13 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 11:12:13 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2407.938 ; gain = 37.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:34]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (1#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (2#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'instructionMemory' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:1]
+	Parameter OPERAND_LENGTH bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'instructionMemory' (3#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (4#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MainControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MainControl' (5#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:21]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (6#1) [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (8#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
+INFO: [Synth 8-6157] synthesizing module 'RISCVALU' [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISCVALU' (9#1) [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (10#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6157] synthesizing module 'AddressDecoder' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'AddressDecoder' (11#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (12#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor' (13#1) [C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:34]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2444.109 ; gain = 73.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2462.035 ; gain = 91.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2462.035 ; gain = 91.434
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2462.035 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/hira6/Downloads/constraints_real.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/hira6/Downloads/constraints_real.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/hira6/Downloads/constraints_real.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/hira6/Downloads/constraints_real.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/hira6/Downloads/constraints_real.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/hira6/Downloads/constraints_real.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/hira6/Downloads/constraints_real.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/hira6/Downloads/constraints_real.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [C:/Users/hira6/Downloads/constraints_real.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/hira6/Downloads/constraints_real.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/hira6/Downloads/constraints_real.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/hira6/Downloads/constraints_real.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/hira6/Downloads/constraints_real.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/hira6/Downloads/constraints_real.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/hira6/Downloads/constraints_real.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [C:/Users/hira6/Downloads/constraints_real.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/hira6/Downloads/constraints_real.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/hira6/Downloads/constraints_real.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/hira6/Downloads/constraints_real.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/hira6/Downloads/constraints_real.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/hira6/Downloads/constraints_real.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/hira6/Downloads/constraints_real.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/hira6/Downloads/constraints_real.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[*]'. [C:/Users/hira6/Downloads/constraints_real.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/hira6/Downloads/constraints_real.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/hira6/Downloads/constraints_real.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/hira6/Downloads/constraints_real.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/hira6/Downloads/constraints_real.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[*]'. [C:/Users/hira6/Downloads/constraints_real.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/constraints_real.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2462.035 ; gain = 91.434
+set_property top top [current_fileset]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Tue Apr  7 11:15:52 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 11:15:52 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  7 11:18:36 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2462.035 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF3060A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v w ]
+add_files -fileset sim_1 C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v
+set_property top taska_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Tue Apr  7 12:04:28 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'taska_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj taska_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Task1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TaskA
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xelab -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot taska_tb_behav xil_defaultlib.taska_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot taska_tb_behav xil_defaultlib.taska_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.taska_tb in library work located at xsim.dir/work.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3927.137 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+set_property top tb_TaskA [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_TaskA' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_TaskA_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Task1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TaskA
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xelab -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDivider
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.immGen
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.RISCVALU
+Compiling module xil_defaultlib.branchAdder
+Compiling module xil_defaultlib.AddressDecoder
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.TopLevelProcessor
+Compiling module xil_defaultlib.sevenseg_basys3
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_TaskA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TaskA_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/xsim.dir/tb_TaskA_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  7 12:07:40 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3988.809 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_TaskA_behav -key {Behavioral:sim_1:Functional:tb_TaskA} -tclbatch {tb_TaskA.tcl} -view {C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg
+WARNING: Simulation object /tb_Task1/clk was not found in the design.
+WARNING: Simulation object /tb_Task1/reset was not found in the design.
+WARNING: Simulation object /tb_Task1/PC was not found in the design.
+WARNING: Simulation object /tb_Task1/PC_Plus4 was not found in the design.
+WARNING: Simulation object /tb_Task1/Branch_Target was not found in the design.
+WARNING: Simulation object /tb_Task1/PC_Next was not found in the design.
+WARNING: Simulation object /tb_Task1/PCSrc was not found in the design.
+WARNING: Simulation object /tb_Task1/inst was not found in the design.
+WARNING: Simulation object /tb_Task1/Imm was not found in the design.
+source tb_TaskA.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+>>> LED CHANGED: x --> 0  at time=45000 ns
+=== RESET RELEASED at time=195000 ns ===
+=== SW=0 for 50 cycles, led should be 0, led=0 ===
+=== SW SET TO 3 at time=695000 ns ===
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3988.809 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_TaskA_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 3988.809 ; gain = 0.000
+uut/clk
+invalid command name "uut/clk"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_TaskA' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_TaskA_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Task1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TaskA
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xelab -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDivider
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.immGen
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.RISCVALU
+Compiling module xil_defaultlib.branchAdder
+Compiling module xil_defaultlib.AddressDecoder
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.TopLevelProcessor
+Compiling module xil_defaultlib.sevenseg_basys3
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_TaskA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TaskA_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_TaskA_behav -key {Behavioral:sim_1:Functional:tb_TaskA} -tclbatch {tb_TaskA.tcl} -view {C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+open_wave_config C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg
+WARNING: Simulation object /tb_Task1/clk was not found in the design.
+WARNING: Simulation object /tb_Task1/reset was not found in the design.
+WARNING: Simulation object /tb_Task1/PC was not found in the design.
+WARNING: Simulation object /tb_Task1/PC_Plus4 was not found in the design.
+WARNING: Simulation object /tb_Task1/Branch_Target was not found in the design.
+WARNING: Simulation object /tb_Task1/PC_Next was not found in the design.
+WARNING: Simulation object /tb_Task1/PCSrc was not found in the design.
+WARNING: Simulation object /tb_Task1/inst was not found in the design.
+WARNING: Simulation object /tb_Task1/Imm was not found in the design.
+source tb_TaskA.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3988.809 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_TaskA_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 3988.809 ; gain = 0.000
+set_property is_enabled false [get_files  C:/Users/hira6/Downloads/lab_11_final/lab_11/tb_Task1_behav.wcfg]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_TaskA' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_TaskA_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddressDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MainControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISCVALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branchAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module immGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelProcessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg_basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Task1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_TaskA
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+"xelab -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TaskA_behav xil_defaultlib.tb_TaskA xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDivider
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.immGen
+Compiling module xil_defaultlib.MainControl
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.RISCVALU
+Compiling module xil_defaultlib.branchAdder
+Compiling module xil_defaultlib.AddressDecoder
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.TopLevelProcessor
+Compiling module xil_defaultlib.sevenseg_basys3
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_TaskA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TaskA_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_TaskA_behav -key {Behavioral:sim_1:Functional:tb_TaskA} -tclbatch {tb_TaskA.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source tb_TaskA.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_TaskA_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 3988.809 ; gain = 0.000
+run 50ms
+$finish called at time : 6303795 ns : File "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.srcs/sim_1/new/taska_tb.v" Line 61
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  7 12:37:04 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 12:37:04 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3988.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF3060A
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+[Tue Apr  7 12:41:55 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  7 12:59:19 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 12:59:19 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3988.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF3060A
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+set_property top TopLevelProcessor [current_fileset]
+set_property top top [current_fileset]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Apr  7 13:15:18 2026] Launched synth_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/synth_1/runme.log
+[Tue Apr  7 13:15:18 2026] Launched impl_1...
+Run output will be captured here: C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF3060A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF3060A
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF3060A
+close_hw_manager
+close_hw_manager: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4206.047 ; gain = 217.238
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/hira6/Downloads/lab_11_final/lab_11/lab_10.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 15:53:02 2026...
