@@ -1,6 +1,6 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3497062ebed24fb58820556388606142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task_c_tb_behav xil_defaultlib.task_c_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -10,7 +10,7 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.ProgramCounter
 Compiling module xil_defaultlib.pcAdder
-Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.instruction_task_b_fib
 Compiling module xil_defaultlib.immGen
 Compiling module xil_defaultlib.MainControl
 Compiling module xil_defaultlib.register_file
@@ -22,6 +22,6 @@ Compiling module xil_defaultlib.AddressDecoder
 Compiling module xil_defaultlib.DataMemory
 Compiling module xil_defaultlib.sevenseg_basys3
 Compiling module xil_defaultlib.TopLevelProcessor
-Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.task_c_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_top_behav
+Built simulation snapshot task_c_tb_behav

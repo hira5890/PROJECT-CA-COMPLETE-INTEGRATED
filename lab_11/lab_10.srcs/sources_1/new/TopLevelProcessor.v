@@ -44,12 +44,14 @@ module TopLevelProcessor (
     //   Branch taken -> Branch_Target (PC + B-imm)
     //   Sequential -> PC + 4
     // =========================================================================
-    wire [31:0] jalr_target = {ALUResult[31:1], 1'b0};
-    wire [31:0] jump_target = is_jalr ? jalr_target : Branch_Target;
-    wire        take_jump   = is_jal | is_jalr;
+wire [31:0] jal_target  = PC + Imm;
+wire [31:0] jalr_target = (ReadData1 + Imm) & 32'hFFFFFFFE;
 
-    assign PC_Next = take_jump   ? jump_target   :
-                     BranchTaken ? Branch_Target : PC_Plus4;
+assign PC_Next =
+    is_jal  ? jal_target  :
+    is_jalr ? jalr_target :
+    BranchTaken ? Branch_Target :
+    PC_Plus4;
 
     // Write-back: JAL/JALR write PC+4 (return address) into rd
     assign WriteBackData = (is_jal | is_jalr) ? PC_Plus4        :
@@ -64,7 +66,7 @@ module TopLevelProcessor (
     pcAdder u_pcAdder (
         .PC(PC), .PC_Plus4(PC_Plus4)
     );
-    instructionMemory u_iMem (
+    instruction_task_b_fib u_iMem (
         .instAddress(PC), .instruction(instruction)
     );
     immGen u_immGen (

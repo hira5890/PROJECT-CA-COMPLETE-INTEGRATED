@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.runs/synth_1/top.tcl"
+  variable script "C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,11 +78,11 @@ create_project -in_memory -part xc7a35ticpg236-1L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
@@ -91,18 +91,19 @@ read_verilog -library xil_defaultlib {
   C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v
   C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v
   C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v}
   C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v}
   C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v}
-  {C:/Users/hira6/CA project/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v}
+  {C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/instruction_task_b.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
