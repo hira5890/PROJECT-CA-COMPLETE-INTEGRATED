@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Apr 11 04:23:47 2026
-# Process ID: 26408
-# Current directory: C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.runs/synth_1
-# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.runs/synth_1/top.vds
-# Journal file: C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.runs/synth_1\vivado.jou
+# Start of session at: Mon Apr 13 00:04:24 2026
+# Process ID: 2892
+# Current directory: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/synth_1
+# Command line: vivado.exe -log Top_for_task_A.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_for_task_A.tcl
+# Log file: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/synth_1/Top_for_task_A.vds
+# Journal file: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source top.tcl -notrace
+source Top_for_task_A.tcl -notrace

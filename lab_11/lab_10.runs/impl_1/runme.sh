@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/hira6/CA project TASK B/lab_11_final/lab_11/lab_10.runs/impl_1'
+HD_PWD='C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
-EAStep vivado -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+/bin/touch .init_design.begin.rst
+EAStep vivado -log Top_for_task_A.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Top_for_task_A.tcl -notrace
 
 

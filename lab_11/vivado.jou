@@ -2,15 +2,90 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sat Apr 11 09:19:16 2026
-# Process ID: 20976
-# Current directory: C:/Users/hira6/CA project TASK B/lab_11_final/lab_11
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6764 C:\Users\hira6\CA project TASK B\lab_11_final\lab_11\lab_10.xpr
-# Log file: C:/Users/hira6/CA project TASK B/lab_11_final/lab_11/vivado.log
-# Journal file: C:/Users/hira6/CA project TASK B/lab_11_final/lab_11\vivado.jou
+# Start of session at: Sun Apr 12 23:37:52 2026
+# Process ID: 20612
+# Current directory: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22576 C:\Users\hira6\Downloads\Task_c_done_sarah\Task_c_done_sarah\lab_11_final\lab_11\lab_10.xpr
+# Log file: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/vivado.log
+# Journal file: C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/hira6/CA project TASK B/lab_11_final/lab_11/lab_10.xpr}
-reset_run impl_1 -prev_step 
+open_project C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.xpr
+open_run impl_1
+set_property BITSTREAM.FILE.WRITETOFILE TRUE [current_design]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_assembly_code_testing_task_b [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/impl_1/top_assembly_code_testing_task_b.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_control_fpga_task_b [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/impl_1/top_control_fpga_task_b.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_for_task_c [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/impl_1/top_for_task_c.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Top_for_task_A [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/impl_1/Top_for_task_A.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

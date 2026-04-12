@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module top (
+module top_for_task_c (
     input  wire        clk,
     input  wire        btnC,
     input  wire [5:0]  sw,

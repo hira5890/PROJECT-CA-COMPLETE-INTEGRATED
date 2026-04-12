@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+    with args -log Top_for_task_A.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_for_task_A.tcl
 
 
 
@@ -9,128 +9,286 @@
   **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source top.tcl -notrace
-Command: synth_design -top top -part xc7a35ticpg236-1L
+source Top_for_task_A.tcl -notrace
+Command: synth_design -top Top_for_task_A -part xc7a35ticpg236-1L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21048
+INFO: [Synth 8-7075] Helper process launched with PID 9016
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1030.766 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1029.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v:2]
-INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider.v:2]
-INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:2]
-INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
-INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (3#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
-INFO: [Synth 8-6157] synthesizing module 'instruction_task_b_fib' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/instruction_task_b.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Top_for_task_A' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_for_task_A_countdown.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider_A' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider_A.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider_A' (1#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ClockDivider_A.v:14]
+INFO: [Synth 8-6157] synthesizing module 'TopLevelProcessor_TASK_A' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_Level_Processor_TASK_A.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/ProgramCounter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (3#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/pcAdder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'instructionMemory_Task_A' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:9]
 	Parameter OPERAND_LENGTH bound to: 31 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'instruction_task_b_fib' (4#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/instruction_task_b.v:14]
-INFO: [Synth 8-6157] synthesizing module 'immGen' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'immGen' (5#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
-INFO: [Synth 8-6157] synthesizing module 'MainControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'MainControl' (6#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'instructionMemory_Task_A' (4#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/toplvl.v:9]
+INFO: [Synth 8-6157] synthesizing module 'immGen' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'immGen' (5#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/immGen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MainControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MainControl' (6#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/MainControl.v:3]
+WARNING: [Synth 8-7071] port 'Jump' of module 'MainControl' is unconnected for instance 'u_MainCtrl' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_Level_Processor_TASK_A.v:73]
+WARNING: [Synth 8-7023] instance 'u_MainCtrl' of module 'MainControl' has 9 connections declared, but only 8 given [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_Level_Processor_TASK_A.v:73]
 INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/hira6/Downloads/lab067/lab_7/lab_7/lab_7.srcs/sources_1/new/register_file.v:3]
-INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
-INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
-INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (9#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:31]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/mux2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (9#1) [C:/Users/hira6/Downloads/lab-09/lab-09/lab-09.srcs/sources_1/new/ALUControl.v:32]
 INFO: [Synth 8-6157] synthesizing module 'RISCVALU' [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'RISCVALU' (10#1) [C:/Users/hira6/CA-LABS-5-11/lab_6_ca/lab6hirasidrah/lab6hirasidrah.srcs/sources_1/new/RISCVALU.v:1]
-INFO: [Synth 8-6157] synthesizing module 'branchAdder' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (11#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
-INFO: [Synth 8-6157] synthesizing module 'AddressDecoder' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'AddressDecoder' (12#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:2]
-INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (13#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:12]
-INFO: [Synth 8-6157] synthesizing module 'sevenseg_basys3' [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg_basys3' (14#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor' (15#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/TopLevelProcessor.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'top' (16#1) [C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'branchAdder' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'branchAdder' (11#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/branchAdder.v:15]
+INFO: [Synth 8-6157] synthesizing module 'AddressDecoder' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'AddressDecoder' (12#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/AddressDecoder.v:13]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (13#1) [C:/Users/hira6/CA-LABS-5-11/lab8ca/lab8sidrahira/lab888.srcs/sources_1/new/DataMemory.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_basys3' [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_basys3' (14#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/seven_seg.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelProcessor_TASK_A' (15#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_Level_Processor_TASK_A.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Top_for_task_A' (16#1) [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/sources_1/new/Top_for_task_A_countdown.v:10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1030.766 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1030.766 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1030.766 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1029.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1030.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1029.125 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
 Finished Parsing XDC File [C:/Users/hira6/Downloads/constraints_real.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hira6/Downloads/constraints_real.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hira6/Downloads/constraints_real.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_for_task_A_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_for_task_A_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.srcs/constrs_1/new/integrated_constraint_file.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_for_task_A_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_for_task_A_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1060.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1040.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1060.348 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1040.473 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticpg236-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 3     
 	   3 Input   32 Bit       Adders := 1     
-	   2 Input    3 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 33    
+	               24 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   6 Input   32 Bit        Muxes := 1     
 	  33 Input   32 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 7     
-	 513 Input    8 Bit        Muxes := 4     
-	   2 Input    3 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   24 Bit        Muxes := 1     
 	   6 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 1     
-	   8 Input    3 Bit        Muxes := 1     
 	   9 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 33    
-	   9 Input    1 Bit        Muxes := 5     
-	   4 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 36    
+	   3 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -146,19 +304,35 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register u_cpu/u_PC/PC_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:04 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
+ROM: Preliminary Mapping	Report
++-------------------------+------------+---------------+----------------+
+|Module Name              | RTL Object | Depth x Width | Implemented As | 
++-------------------------+------------+---------------+----------------+
+|instructionMemory_Task_A | p_0_out    | 128x8         | LUT            | 
+|instructionMemory_Task_A | p_0_out    | 128x8         | LUT            | 
+|instructionMemory_Task_A | p_0_out    | 128x8         | LUT            | 
+|instructionMemory_Task_A | p_0_out    | 128x8         | LUT            | 
+|Top_for_task_A           | p_0_out    | 128x8         | LUT            | 
+|Top_for_task_A           | p_0_out    | 128x8         | LUT            | 
+|Top_for_task_A           | p_0_out    | 128x8         | LUT            | 
+|Top_for_task_A           | p_0_out    | 128x8         | LUT            | 
++-------------------------+------------+---------------+----------------+
+
+
 Distributed RAM: Preliminary Mapping	Report (see note below)
-+------------+----------------------------+-----------+----------------------+-----------------+
-|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
-+------------+----------------------------+-----------+----------------------+-----------------+
-|top         | u_cpu/u_dataMem/memory_reg | Implied   | 256 x 32             | RAM256X1S x 32	 | 
-+------------+----------------------------+-----------+----------------------+-----------------+
++---------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name    | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++---------------+----------------------------+-----------+----------------------+-----------------+
+|Top_for_task_A | u_cpu/u_dataMem/memory_reg | Implied   | 512 x 32             | RAM256X1S x 64	 | 
++---------------+----------------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -167,25 +341,26 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:01:56 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:08 ; elapsed = 00:02:14 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1060.348 ; gain = 29.582
+Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:32 . Memory (MB): peak = 1040.473 ; gain = 11.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping	Report
-+------------+----------------------------+-----------+----------------------+-----------------+
-|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
-+------------+----------------------------+-----------+----------------------+-----------------+
-|top         | u_cpu/u_dataMem/memory_reg | Implied   | 256 x 32             | RAM256X1S x 32	 | 
-+------------+----------------------------+-----------+----------------------+-----------------+
++---------------+----------------------------+-----------+----------------------+-----------------+
+|Module Name    | RTL Object                 | Inference | Size (Depth x Width) | Primitives      | 
++---------------+----------------------------+-----------+----------------------+-----------------+
+|Top_for_task_A | u_cpu/u_dataMem/memory_reg | Implied   | 512 x 32             | RAM256X1S x 64	 | 
++---------------+----------------------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -194,7 +369,7 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1072.629 ; gain = 41.863
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:38 . Memory (MB): peak = 1061.684 ; gain = 32.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -212,37 +387,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -259,42 +434,43 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |    52|
-|3     |LUT1      |     1|
-|4     |LUT2      |   163|
-|5     |LUT3      |    52|
-|6     |LUT4      |    50|
-|7     |LUT5      |   217|
-|8     |LUT6      |   793|
-|9     |MUXF7     |   283|
-|10    |MUXF8     |    65|
-|11    |RAM256X1S |    32|
+|2     |CARRY4    |    42|
+|3     |LUT1      |     4|
+|4     |LUT2      |   115|
+|5     |LUT3      |   116|
+|6     |LUT4      |    70|
+|7     |LUT5      |   160|
+|8     |LUT6      |   710|
+|9     |MUXF7     |   292|
+|10    |MUXF8     |    58|
+|11    |RAM256X1S |    64|
 |12    |FDCE      |   992|
-|13    |FDRE      |    42|
-|14    |IBUF      |     8|
-|15    |OBUF      |    17|
+|13    |FDRE      |    73|
+|14    |FDSE      |     4|
+|15    |IBUF      |     8|
+|16    |OBUF      |    17|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 1079.191 ; gain = 18.844
-Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:03 . Memory (MB): peak = 1079.191 ; gain = 48.426
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:27 ; elapsed = 00:02:41 . Memory (MB): peak = 1068.238 ; gain = 27.766
+Synthesis Optimization Complete : Time (s): cpu = 00:02:36 ; elapsed = 00:02:43 . Memory (MB): peak = 1068.238 ; gain = 39.113
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1091.344 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 432 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1080.301 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 456 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1091.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1080.301 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 32 instances were transformed.
-  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  A total of 64 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 54 Warnings, 50 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:05 ; elapsed = 00:02:09 . Memory (MB): peak = 1091.344 ; gain = 60.578
-INFO: [Common 17-1381] The checkpoint 'C:/Users/hira6/CA project new/lab_11_final/lab_11/lab_10.runs/synth_1/top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 04:26:00 2026...
+synth_design: Time (s): cpu = 00:02:42 ; elapsed = 00:02:53 . Memory (MB): peak = 1080.301 ; gain = 51.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hira6/Downloads/Task_c_done_sarah/Task_c_done_sarah/lab_11_final/lab_11/lab_10.runs/synth_1/Top_for_task_A.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_for_task_A_utilization_synth.rpt -pb Top_for_task_A_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 13 00:07:23 2026...
